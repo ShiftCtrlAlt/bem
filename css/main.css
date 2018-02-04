@@ -1,0 +1,173 @@
+body,p,div,li{margin:0;padding:0;}
+ul{margin:0;}
+body{background-color: #fdfdfd;}
+section{position: relative;
+	font-family: MicrosoftYaHei;
+}
+.b_white{background-color: #fff!important;}
+.c_white{color: #fff!important;}
+.header{
+	background-color: #fff;
+    padding: 0 30px;}
+.header p{
+    font-size: 16px;
+    line-height: 75px;
+    display: inline-block;
+    }
+.header img{
+    width: 17px;
+    display: inline-block;
+    float: right;
+    margin-top: 30px;
+}
+.banner img{
+	width: 100%;
+	vertical-align: middle;
+}
+.banner .txt{	
+	text-align:  center;
+	font-size: 18px;
+	position: absolute;
+	top:20%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 80%;
+	margin:0 auto;
+	color: #fff;
+}
+.tab{padding:40px 0;font-size: 0;}
+.tab .tit{
+	color: #4d4d4d;
+	text-align: center;
+    font-size: 18px;
+}
+.tab hr{width: 7%;border:0.2px solid #cb0023;background-color: #cb0023;height: 0.5px;}
+.tb_one .container .item{
+	width: 26.7%;
+	display: inline-block;
+	text-align: center;
+	padding: 15px 0 18px 0;
+	background-color: #fff;
+	box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.26);
+	margin: 30px 0 0 4.7%;
+}
+.tb_one .container .item img{width: 61%;margin-bottom: 8px;vertical-align: middle;}
+.tb_one .container .item p{font-size: 13px}
+.tb_one .container .item{}
+
+.tb_two{padding:40px 0;font-size: 0;color: #fff;padding:40px 0;font-size: 0;background-color: #2d2d2d;}
+.tb_two .tit{
+	color: #fff;
+	text-align: center;
+    font-size: 18px;
+}
+.tb_two .tit hr{border:0.2px solid #fff;background-color: #fff;}
+.tb_two .left{width:50%;font-size: 11px;display: inline-block;}
+.tb_two .left li{color: #f7d83f;font-size: 14px;}
+.tb_two .left div{margin: 5px 0 20px 0;}
+.tb_two .right{width: 50%;display: inline-block;vertical-align: top;}
+.tb_two .right img{width: 100%;vertical-align: middle;}
+.tb_two .container{margin:22px 0 0 0;}
+.tb_three .container{margin-top: 45px;padding: 0 15px;    text-align: center;}
+.tb_three .container img{width: -15%;}
+.tb_three .container .item{display: inline-block;width: 30%;font-size: 15px;text-align: center;}
+.tb_three .container .item img{width: 50%;vertical-align: middle;}
+.tb_three .container .item p{margin:25px 0 35px 0;}
+.tb_four img{width: 100%;vertical-align: middle;}
+.tb_four .container{background-color: #607d8b;color: #fff;padding:30px 30px;}
+.tb_four .container .tit{font-size: 17px;}
+.tb_four .container .con{
+	font-size: 12px;
+    margin: 12px 0px;
+}
+.tb_four .container .d_con{
+	font-size: 13px;
+	color: #64ffda;
+}
+.tb_fives{}
+.tb_fives .introd{color: rgba(77, 77, 77, 0.7);text-align: center;font-size: 13px;}
+.tb_fives .container .item{width: 43%;margin: 30px 0 0 4.7%;background-color: #fff;  box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.26);display: inline-block;}
+.tb_fives .container .item img{width: 100%;vertical-align: middle;}
+.tb_fives .container .item p{padding: 10px 0 10px 15px;font-size: 15px;}
+.tb_fives .btn{
+  width: 97px;
+  height: 34px;
+  border-radius: 2px;
+  background-color: #cb0023;
+  text-align: center;
+  margin:0 auto;
+  box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.26);
+  color: #fff;
+  font-size: 15px;
+  color: #fff;
+  line-height: 34px;
+  margin:20px auto 0 auto;
+}
+.footer{
+    padding: 40px 0;
+    font-size: 0;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 0;
+    background-color: #2d2d2d;
+}
+.footer hr{    
+	border: 0.2px solid #fff;
+    background-color: #fff;
+}
+.footer .container{
+	margin: 9% 0;
+    padding: 0 45px;
+}
+.footer .container .item{
+	width: 33%;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+}
+.footer .container .item img{
+    width: 15%;
+    margin: 5px 0;
+}
+
+.footer .container .ipt{
+    width: 42%;
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 10%;
+    padding: 0 0 0 8%;
+}
+.footer .container .ipt input{
+	border:0px;
+	background-color: #2d2d2d;
+	caret-color: #fff;
+	color: #fff;
+    width: 80%;
+    margin-left: 6%;
+    font-size: 15px;
+}
+.footer .container .ipt input:focus{
+	outline: -webkit-focus-ring-color auto 0px;
+}
+.footer .container .ipt hr{
+	width: 100%;
+    border: 0.2px solid #fff;
+    background-color: #fff;
+}
+.footer .container .long{width: 92%;}
+.footer .container .ipt textarea:focus{
+	outline: -webkit-focus-ring-color auto 0px;
+}
+.footer .container .ipt textarea{
+    width: 80%;
+    margin-left: 5%;
+    font-size: 15px;
+	border:0px;
+	background-color: #2d2d2d;
+	caret-color: #fff;
+	color: #fff;
+    font-size: 15px;
+    vertical-align: top;
+    resize: none;
+}

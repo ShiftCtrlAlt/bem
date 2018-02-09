@@ -5,6 +5,7 @@ section{
 	position: relative;
 	font-family: MicrosoftYaHei;
 }
+.top_bg{width:100%;height:70px;}
 .b_white{background-color: #fff!important;}
 .c_white{color: #fff!important;}
 .header{

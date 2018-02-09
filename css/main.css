@@ -1,24 +1,35 @@
 body,p,div,li{margin:0;padding:0;}
 ul{margin:0;}
 body{background-color: #fdfdfd;}
-section{position: relative;
+section{
+	position: relative;
 	font-family: MicrosoftYaHei;
 }
 .b_white{background-color: #fff!important;}
 .c_white{color: #fff!important;}
 .header{
 	background-color: #fff;
-    padding: 0 30px;}
+    padding: 0 5%;
+    height: 70px;
+    position: fixed;
+    width: 90%;
+    z-index: 5;
+	}
 .header p{
     font-size: 16px;
-    line-height: 75px;
+    line-height: 70px;
     display: inline-block;
-    }
+  }
 .header img{
     width: 17px;
-    display: inline-block;
-    float: right;
     margin-top: 30px;
+}
+.header div{
+  display: inline-block;
+    float: right;
+    width: 15%;
+    height: 100%;
+    text-align: right;
 }
 .banner img{
 	width: 100%;
@@ -127,7 +138,7 @@ section{position: relative;
 	text-align: center;
 }
 .footer .container .item img{
-    width: 15%;
+    width: 25%;
     margin: 5px 0;
 }
 
@@ -150,6 +161,10 @@ section{position: relative;
 .footer .container .ipt input:focus{
 	outline: -webkit-focus-ring-color auto 0px;
 }
+
+.footer .container p{
+     line-height: 30px; 
+}
 .footer .container .ipt hr{
 	width: 100%;
     border: 0.2px solid #fff;
@@ -170,4 +185,16 @@ section{position: relative;
     font-size: 15px;
     vertical-align: top;
     resize: none;
+}
+
+.left_item{position: fixed;width: 100px;height: 100%;background-color: #fff;z-index: 5;right: -50%;transition:.5s;top: 70px;}
+.left_item p{text-align: center;line-height: 40px;}
+.left_item_bg{
+  display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #909090;
+    z-index: 1;
+    opacity: 0.4;
 }

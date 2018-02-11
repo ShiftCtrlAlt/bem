@@ -79,7 +79,7 @@ section{
 .tb_two .left li{color: #f7d83f;font-size: 14px;}
 .tb_two .left div{margin: 5px 0 20px 0;}
 .tb_two .right{width: 50%;display: inline-block;vertical-align: top;}
-.tb_two .right img{width: 100%;vertical-align: middle;}
+.tb_two .right img{width: 50%;vertical-align: middle;position: absolute;top: 50%;transform: translateY(-50%);}
 .tb_two .container{margin:22px 0 0 0;}
 .tb_three .container{margin-top: 45px;padding: 0 15px;    text-align: center;}
 .tb_three .container img{width: -15%;}
@@ -130,7 +130,7 @@ section{
 }
 .footer .container{
 	margin: 9% 0;
-    padding: 0 45px;
+	/* padding: 0 45px; */
 }
 .footer .container .item{
 	width: 33%;

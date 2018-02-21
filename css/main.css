@@ -199,3 +199,20 @@ section{
     z-index: 1;
     opacity: 0.4;
 }
+.load_img{
+
+    display: none;
+    width: 100%;
+    position: fixed;
+    z-index: 15;
+    opacity: .5;
+}
+.load_bg{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    opacity: 0.5;
+}

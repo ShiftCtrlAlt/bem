@@ -17,6 +17,8 @@
 	</section>
 	<div class='top_bg'></div>
 	<div class='left_item_bg'></div>
+	<div class='load_bg'></div>
+	<img class='load_img' src="./images/load.gif" alt="">
 	<div class='left_item'>
 		<p class='left_item_do'>能力</p>
 		<p class='left_item_select'>选择</p>
@@ -77,19 +79,19 @@
 		<div class='container'>
 			<p class='tit'>我们最终目的，是为您创造更多价值</p>
 			<p class='con'>为客户提供，售前咨询，售中引导，售后服务等！为保证客户的服务质量，我们对所有客户均为一对一的进行售后服务，及时处理客户在操作中遇到的问题。</p>
-			<p class='d_con'>有意向进行合作 ></p>
+			<p class='d_con content_btn'>有意向进行合作 ></p>
 		</div>
 	</section>
 	<section class='tab tb_fives'>
 		<div class='tit'><p>案例展示</p><hr></div>
 		<div class='introd'>我们期待，下一个您的网站出现在这里</div>
-		<div class='container'>
+		<div class='container add_item'>
 			<div class='item'><img src="./images/pro-11@3x-min.png" alt=""><p>中国健康产业发展委员会</p></div>
 			<div class='item'><img src="./images/pro-22@3x-min.png" alt=""><p>天旭东材料科技</p></div>
 			<div class='item'><img src="./images/pro-19@3x-min.png" alt=""><p>新智力教育</p></div>
 			<div class='item'><img src="./images/pro-16@3x-min.png" alt=""><p>金永信</p></div>
 		</div>
-		<div class='btn'>查看更多</div>
+		<div class='btn add_more'>查看更多</div>
 	</section>
 	<section class='tab footer'>
 		<div class='tit'><p class='c_white'>联系我们</p><hr></div>
@@ -105,6 +107,12 @@
 </body>
 <script src='./js/jquery-1.11.3.min.js'></script>
 <script>
+	var img_list =[
+		{'uname':'金永信','uurl':'./images/pro-4@3x-min.png'},
+		{'uname':'金永信','uurl':'./images/pro-4@3x-min.png'},
+		{'uname':'金永信','uurl':'./images/pro-4@3x-min.png'},
+		{'uname':'金永信','uurl':'./images/pro-16@3x-min.png'},
+	];
 	var show_left_item = function(show){
 		if(show){
 			$('.left_item').css('right',0);
@@ -112,6 +120,15 @@
 		}else{
 			$('.left_item').css('right','-50%');
 			$('.left_item_bg').css('display','none');
+		}
+	}
+	var show_load = function(show){
+		if(show){
+			$('.load_bg').css('display','block');
+			$('.load_img').css('display','block');
+		}else{
+			$('.load_bg').css('display','none');
+			$('.load_img').css('display','none');
 		}
 	}
 	var show_section_top = function(top){
@@ -135,9 +152,24 @@
 		show_left_item(false);
 		show_section_top($('.tb_fives').offset().top-70);
 	});
-	$('.left_item_contact').click(function(){
+	$('.left_item_contact,.content_btn').click(function(){
 		show_left_item(false);
 		show_section_top($('.footer').offset().top);
+	});
+	$('.add_more').click(function(){
+		if(img_list.length == 0){
+			alert('没有更多了')
+			return;
+		}
+		show_load(true);
+		setTimeout(function(){
+			for(let i in img_list){
+				$('.add_item').append("<div class='item'><img src='"+img_list[i].uurl+"'><p>"+img_list[i].uname+"</p></div>");
+			}
+			img_list = [];
+			show_load(false);	
+
+		},1000)
 	});
 	$('.menu').click(function(){show_left_item(true);});
 	$('.left_item_bg').click(function(){show_left_item(false)});
